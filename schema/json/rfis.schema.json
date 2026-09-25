@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/constructelligence-lab/construction-project-records/schema/json/rfis.schema.json",
+  "title": "rfis",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "description": "Project or job number",
+      "type": "string"
+    },
+    "rfi_number": {
+      "description": "RFI number as it appears on the log and in correspondence. Never renumber",
+      "type": "string"
+    },
+    "subject": {
+      "description": "One line that makes sense in a log listing",
+      "type": "string"
+    },
+    "question": {
+      "description": "The specific question. One question per RFI where possible",
+      "type": "string"
+    },
+    "proposed_answer": {
+      "description": "Our proposed interpretation so the answer can be a confirmation",
+      "type": "string"
+    },
+    "references": {
+      "description": "Drawing and specification references",
+      "type": "string"
+    },
+    "created_date": {
+      "description": "Date the RFI was issued",
+      "type": "string",
+      "format": "date"
+    },
+    "date_needed": {
+      "description": "Date the answer is needed",
+      "type": "string",
+      "format": "date"
+    },
+    "reason_needed": {
+      "description": "Why that date: the activity or order it holds up",
+      "type": "string"
+    },
+    "ball_in_court": {
+      "description": "Who owes the next action",
+      "type": "string"
+    },
+    "status": {
+      "description": "Answered means a response was received; closed means it has been acted on",
+      "type": "string",
+      "enum": [
+        "open",
+        "answered",
+        "closed",
+        "void"
+      ]
+    },
+    "answered_date": {
+      "description": "Date the answer was received",
+      "type": "string",
+      "format": "date"
+    },
+    "answer": {
+      "description": "The response as received",
+      "type": "string"
+    },
+    "cost_impact": {
+      "description": "Whether the answer changes cost",
+      "type": "string",
+      "enum": [
+        "none",
+        "possible",
+        "yes"
+      ]
+    },
+    "schedule_impact": {
+      "description": "Whether the answer changes time",
+      "type": "string",
+      "enum": [
+        "none",
+        "possible",
+        "yes"
+      ]
+    },
+    "created_by": {
+      "description": "Person who raised it",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "rfi_number",
+    "subject",
+    "question",
+    "created_date",
+    "status"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+project_id,item_number,location,description,responsible_party,created_date,due_date,status,closed_date,verified_by
+P-2041,PL-001,Room 102,Fill screw pops,Sample Painting,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-002,Room 104,Missing cover plate,Sample Electric,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-003,Room 106,Diffuser not aligned,Sample Mechanical,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-004,Room 108,Base cove loose,Sample Flooring,2026-09-01,2026-09-15,closed,2026-09-10,
+P-2041,PL-005,Room 110,Touch up paint at door frame,Sample Drywall,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-006,Room 100,Fill screw pops,Sample Painting,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-007,Room 102,Missing cover plate,Sample Electric,2026-09-01,2026-09-15,closed,,Superintendent
+P-2041,PL-008,Room 104,Diffuser not aligned,Sample Mechanical,2026-09-01,2026-09-15,closed,2026-09-10,
+P-2041,PL-009,Room 106,Base cove loose,Sample Flooring,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-010,Room 108,Touch up paint at door frame,Sample Drywall,2026-09-01,2026-09-15,closed,2026-09-10,Superintendent
+P-2041,PL-011,Room 110,Fill screw pops,Sample Painting,2026-09-01,2026-09-15,ready_for_review,,
+P-2041,PL-012,Room 100,Missing cover plate,Sample Electric,2026-09-01,2026-09-15,ready_for_review,,
+P-2041,PL-013,Room 102,Diffuser not aligned,Sample Mechanical,2026-09-01,2026-09-15,ready_for_review,,
+P-2041,PL-014,Room 104,Base cove loose,Sample Flooring,2026-09-01,2026-09-15,ready_for_review,,
+P-2041,PL-015,Room 106,Touch up paint at door frame,Sample Drywall,2026-09-01,2026-09-15,open,,
+P-2041,PL-016,Room 108,Fill screw pops,Sample Painting,2026-09-01,2026-09-15,open,,
+P-2041,PL-017,Room 110,Missing cover plate,Sample Electric,2026-09-01,2026-09-15,open,,
+P-2041,PL-018,Room 100,Diffuser not aligned,Sample Mechanical,2026-09-01,2026-09-15,open,,
+P-2041,PL-019,Room 102,Base cove loose,Sample Flooring,2026-09-01,2026-09-15,open,,
+P-2041,PL-020,Room 104,Touch up paint at door frame,Sample Drywall,2026-09-01,2026-09-15,open,,
+P-2041,PL-021,Room 106,Fill screw pops,Sample Painting,2026-09-01,2026-09-15,open,,
+P-2041,PL-022,Room 108,Missing cover plate,Sample Electric,2026-09-01,2026-09-15,open,,
+P-2041,PL-023,Room 110,Diffuser not aligned,Sample Mechanical,2026-09-01,2026-09-15,open,,
+P-2041,PL-024,Room 100,Base cove loose,Sample Flooring,2026-09-01,2026-09-15,open,,

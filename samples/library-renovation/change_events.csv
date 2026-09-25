@@ -1,0 +1,8 @@
+project_id,event_number,title,origin,event_date,notice_required_by,notice_date,status,estimated_cost,estimated_days,related_rfi,change_order_number
+P-2041,CE-001,Abandoned conduit removal in reading room,rfi,2026-07-24,2026-08-07,2026-07-27,approved,4850.00,0,RFI-003,CO-001
+P-2041,CE-002,Owner-requested additional data outlets,owner_directive,2026-08-04,2026-08-18,2026-08-05,approved,12640.00,2,,
+P-2041,CE-003,Extra floor leveling at stacks area,unforeseen_condition,2026-07-28,2026-08-11,2026-08-14,submitted,7920.00,1,RFI-004,
+P-2041,CE-004,Relocated rooftop unit support steel,design_change,2026-08-20,2026-09-03,,open,18500.00,5,RFI-011,
+P-2041,CE-005,Asbestos-containing mastic under carpet,unforeseen_condition,2026-08-26,2026-09-09,2026-08-27,priced,22300.00,6,,
+P-2041,CE-006,Upgraded circulation desk finish,owner_directive,2026-09-02,2026-09-16,2026-09-03,rejected,9100.00,0,,
+P-2041,CE-007,Delay awaiting sprinkler main relocation answer,delay,2026-09-09,2026-09-23,,open,0.00,3,RFI-013,

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/constructelligence-lab/construction-project-records/schema/json/submittals.schema.json",
+  "title": "submittals",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "description": "Project or job number",
+      "type": "string"
+    },
+    "submittal_number": {
+      "description": "Submittal number. Resubmittals keep the number and increase the revision",
+      "type": "string"
+    },
+    "revision": {
+      "description": "0 for the first submission",
+      "type": "integer"
+    },
+    "spec_section": {
+      "description": "Specification section the submittal answers",
+      "type": "string"
+    },
+    "title": {
+      "description": "What is being submitted",
+      "type": "string"
+    },
+    "submittal_type": {
+      "description": "Type of submittal",
+      "type": "string",
+      "enum": [
+        "product_data",
+        "shop_drawing",
+        "sample",
+        "mock_up",
+        "certificate",
+        "other"
+      ]
+    },
+    "submitted_date": {
+      "description": "Date sent for review",
+      "type": "string",
+      "format": "date"
+    },
+    "review_due_date": {
+      "description": "Date the review is due under the contract",
+      "type": "string",
+      "format": "date"
+    },
+    "returned_date": {
+      "description": "Date the reviewed submittal came back",
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "description": "Review outcome",
+      "type": "string",
+      "enum": [
+        "not_submitted",
+        "in_review",
+        "approved",
+        "approved_as_noted",
+        "revise_and_resubmit",
+        "rejected",
+        "void"
+      ]
+    },
+    "required_on_site": {
+      "description": "Date the material or item is needed on site",
+      "type": "string",
+      "format": "date"
+    },
+    "lead_time_days": {
+      "description": "Days from approval to delivery",
+      "type": "integer"
+    },
+    "ball_in_court": {
+      "description": "Who owes the next action",
+      "type": "string"
+    },
+    "responsible_party": {
+      "description": "Subcontractor or supplier providing it",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "submittal_number",
+    "revision",
+    "title",
+    "status"
+  ],
+  "additionalProperties": false
+}

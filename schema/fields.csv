@@ -1,0 +1,62 @@
+record,field,type,required,key,allowed,description
+rfis,project_id,text,yes,yes,,Project or job number
+rfis,rfi_number,text,yes,yes,,RFI number as it appears on the log and in correspondence. Never renumber
+rfis,subject,text,yes,no,,One line that makes sense in a log listing
+rfis,question,text,yes,no,,The specific question. One question per RFI where possible
+rfis,proposed_answer,text,no,no,,Our proposed interpretation so the answer can be a confirmation
+rfis,references,text,no,no,,Drawing and specification references
+rfis,created_date,date,yes,no,,Date the RFI was issued
+rfis,date_needed,date,no,no,,Date the answer is needed
+rfis,reason_needed,text,no,no,,Why that date: the activity or order it holds up
+rfis,ball_in_court,text,no,no,,Who owes the next action
+rfis,status,enum,yes,no,open|answered|closed|void,Answered means a response was received; closed means it has been acted on
+rfis,answered_date,date,no,no,,Date the answer was received
+rfis,answer,text,no,no,,The response as received
+rfis,cost_impact,enum,no,no,none|possible|yes,Whether the answer changes cost
+rfis,schedule_impact,enum,no,no,none|possible|yes,Whether the answer changes time
+rfis,created_by,text,no,no,,Person who raised it
+submittals,project_id,text,yes,yes,,Project or job number
+submittals,submittal_number,text,yes,yes,,Submittal number. Resubmittals keep the number and increase the revision
+submittals,revision,int,yes,yes,,0 for the first submission
+submittals,spec_section,text,no,no,,Specification section the submittal answers
+submittals,title,text,yes,no,,What is being submitted
+submittals,submittal_type,enum,no,no,product_data|shop_drawing|sample|mock_up|certificate|other,Type of submittal
+submittals,submitted_date,date,no,no,,Date sent for review
+submittals,review_due_date,date,no,no,,Date the review is due under the contract
+submittals,returned_date,date,no,no,,Date the reviewed submittal came back
+submittals,status,enum,yes,no,not_submitted|in_review|approved|approved_as_noted|revise_and_resubmit|rejected|void,Review outcome
+submittals,required_on_site,date,no,no,,Date the material or item is needed on site
+submittals,lead_time_days,int,no,no,,Days from approval to delivery
+submittals,ball_in_court,text,no,no,,Who owes the next action
+submittals,responsible_party,text,no,no,,Subcontractor or supplier providing it
+change_events,project_id,text,yes,yes,,Project or job number
+change_events,event_number,text,yes,yes,,Change event or potential change order number
+change_events,title,text,yes,no,,What happened
+change_events,origin,enum,yes,no,owner_directive|rfi|design_change|unforeseen_condition|delay|other,Where the change came from
+change_events,event_date,date,yes,no,,Date of the event or instruction
+change_events,notice_required_by,date,no,no,,Latest date for written notice under the contract
+change_events,notice_date,date,no,no,,Date written notice was given
+change_events,status,enum,yes,no,open|priced|submitted|approved|rejected|void,Where the event stands
+change_events,estimated_cost,money,no,no,,Current estimate of cost impact
+change_events,estimated_days,int,no,no,,Current estimate of time impact in days
+change_events,related_rfi,text,no,no,,RFI number that gave rise to it
+change_events,change_order_number,text,no,no,,Change order number once approved
+daily_reports,project_id,text,yes,yes,,Project or job number
+daily_reports,report_date,date,yes,yes,,Date the report covers
+daily_reports,weather,text,no,no,,Conditions that affected work
+daily_reports,work_performed,text,yes,no,,Work in place by area and trade
+daily_reports,manpower_total,int,no,no,,Workers on site across all trades
+daily_reports,delays,text,no,no,,Anything that stopped or slowed work and why
+daily_reports,inspections,text,no,no,,Inspections and tests held and their results
+daily_reports,safety_notes,text,no,no,,Incidents near misses and toolbox talks
+daily_reports,author,text,yes,no,,Who wrote it
+punch_items,project_id,text,yes,yes,,Project or job number
+punch_items,item_number,text,yes,yes,,Punch item number
+punch_items,location,text,yes,no,,Room or area
+punch_items,description,text,yes,no,,What is wrong and what fixes it
+punch_items,responsible_party,text,yes,no,,Trade that must fix it
+punch_items,created_date,date,yes,no,,Date listed
+punch_items,due_date,date,no,no,,Date it must be fixed
+punch_items,status,enum,yes,no,open|ready_for_review|closed|void,Ready for review means the trade says it is fixed
+punch_items,closed_date,date,no,no,,Date verified as fixed
+punch_items,verified_by,text,no,no,,Who checked the fix

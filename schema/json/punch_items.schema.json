@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/constructelligence-lab/construction-project-records/schema/json/punch_items.schema.json",
+  "title": "punch items",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "description": "Project or job number",
+      "type": "string"
+    },
+    "item_number": {
+      "description": "Punch item number",
+      "type": "string"
+    },
+    "location": {
+      "description": "Room or area",
+      "type": "string"
+    },
+    "description": {
+      "description": "What is wrong and what fixes it",
+      "type": "string"
+    },
+    "responsible_party": {
+      "description": "Trade that must fix it",
+      "type": "string"
+    },
+    "created_date": {
+      "description": "Date listed",
+      "type": "string",
+      "format": "date"
+    },
+    "due_date": {
+      "description": "Date it must be fixed",
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "description": "Ready for review means the trade says it is fixed",
+      "type": "string",
+      "enum": [
+        "open",
+        "ready_for_review",
+        "closed",
+        "void"
+      ]
+    },
+    "closed_date": {
+      "description": "Date verified as fixed",
+      "type": "string",
+      "format": "date"
+    },
+    "verified_by": {
+      "description": "Who checked the fix",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "item_number",
+    "location",
+    "description",
+    "responsible_party",
+    "created_date",
+    "status"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/constructelligence-lab/construction-project-records/schema/json/daily_reports.schema.json",
+  "title": "daily reports",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "description": "Project or job number",
+      "type": "string"
+    },
+    "report_date": {
+      "description": "Date the report covers",
+      "type": "string",
+      "format": "date"
+    },
+    "weather": {
+      "description": "Conditions that affected work",
+      "type": "string"
+    },
+    "work_performed": {
+      "description": "Work in place by area and trade",
+      "type": "string"
+    },
+    "manpower_total": {
+      "description": "Workers on site across all trades",
+      "type": "integer"
+    },
+    "delays": {
+      "description": "Anything that stopped or slowed work and why",
+      "type": "string"
+    },
+    "inspections": {
+      "description": "Inspections and tests held and their results",
+      "type": "string"
+    },
+    "safety_notes": {
+      "description": "Incidents near misses and toolbox talks",
+      "type": "string"
+    },
+    "author": {
+      "description": "Who wrote it",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "report_date",
+    "work_performed",
+    "author"
+  ],
+  "additionalProperties": false
+}

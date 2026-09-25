@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/constructelligence-lab/construction-project-records/schema/json/change_events.schema.json",
+  "title": "change events",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "description": "Project or job number",
+      "type": "string"
+    },
+    "event_number": {
+      "description": "Change event or potential change order number",
+      "type": "string"
+    },
+    "title": {
+      "description": "What happened",
+      "type": "string"
+    },
+    "origin": {
+      "description": "Where the change came from",
+      "type": "string",
+      "enum": [
+        "owner_directive",
+        "rfi",
+        "design_change",
+        "unforeseen_condition",
+        "delay",
+        "other"
+      ]
+    },
+    "event_date": {
+      "description": "Date of the event or instruction",
+      "type": "string",
+      "format": "date"
+    },
+    "notice_required_by": {
+      "description": "Latest date for written notice under the contract",
+      "type": "string",
+      "format": "date"
+    },
+    "notice_date": {
+      "description": "Date written notice was given",
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "description": "Where the event stands",
+      "type": "string",
+      "enum": [
+        "open",
+        "priced",
+        "submitted",
+        "approved",
+        "rejected",
+        "void"
+      ]
+    },
+    "estimated_cost": {
+      "description": "Current estimate of cost impact",
+      "type": "string",
+      "pattern": "^-?\\d+(\\.\\d{1,2})?$"
+    },
+    "estimated_days": {
+      "description": "Current estimate of time impact in days",
+      "type": "integer"
+    },
+    "related_rfi": {
+      "description": "RFI number that gave rise to it",
+      "type": "string"
+    },
+    "change_order_number": {
+      "description": "Change order number once approved",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "event_number",
+    "title",
+    "origin",
+    "event_date",
+    "status"
+  ],
+  "additionalProperties": false
+}

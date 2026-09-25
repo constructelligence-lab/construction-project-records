@@ -1,0 +1,33 @@
+project_id,report_date,weather,work_performed,manpower_total,delays,inspections,safety_notes,author
+P-2041,2026-08-03,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,25,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-08-04,Dry,Board hanging level 1; duct install corridor; floor prep stacks,21,,,,Superintendent
+P-2041,2026-08-05,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,28,,,,Superintendent
+P-2041,2026-08-06,Dry,Board hanging level 1; duct install corridor; floor prep stacks,24,,,,Superintendent
+P-2041,2026-08-07,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,20,,,,Superintendent
+P-2041,2026-08-10,Dry,Board hanging level 1; duct install corridor; floor prep stacks,27,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-08-11,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,23,,,,Superintendent
+P-2041,2026-08-12,Dry,Board hanging level 1; duct install corridor; floor prep stacks,19,,,,Superintendent
+P-2041,2026-08-13,"Rain from 10:00, roof work stopped",Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,26,Roofing stood down for rain,,,Superintendent
+P-2041,2026-08-14,Dry,Board hanging level 1; duct install corridor; floor prep stacks,22,,,,Superintendent
+P-2041,2026-08-17,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,18,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-08-18,Dry,Board hanging level 1; duct install corridor; floor prep stacks,25,,,,Superintendent
+P-2041,2026-08-19,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,21,,,,Superintendent
+P-2041,2026-08-20,Dry,Board hanging level 1; duct install corridor; floor prep stacks,28,,,,Superintendent
+P-2041,2026-08-24,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,24,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-08-25,Dry,Board hanging level 1; duct install corridor; floor prep stacks,20,,,,Superintendent
+P-2041,2026-08-26,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,27,,,,Superintendent
+P-2041,2026-08-27,"Rain from 10:00, roof work stopped",Board hanging level 1; duct install corridor; floor prep stacks,23,Roofing stood down for rain,,,Superintendent
+P-2041,2026-08-28,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,19,,,,Superintendent
+P-2041,2026-08-31,Dry,Board hanging level 1; duct install corridor; floor prep stacks,26,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-09-01,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,22,,,,Superintendent
+P-2041,2026-09-02,Dry,Board hanging level 1; duct install corridor; floor prep stacks,18,,,,Superintendent
+P-2041,2026-09-03,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,25,,,,Superintendent
+P-2041,2026-09-07,Dry,Board hanging level 1; duct install corridor; floor prep stacks,21,,,Toolbox talk: ladders,Superintendent
+P-2041,2026-09-08,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,28,,,,Superintendent
+P-2041,2026-09-09,Dry,Board hanging level 1; duct install corridor; floor prep stacks,24,Waiting on RFI-013 at corridor duct,,,Superintendent
+P-2041,2026-09-10,"Rain from 10:00, roof work stopped",Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,20,Roofing stood down for rain,"Above-ceiling inspection, reading room: passed",,Superintendent
+P-2041,2026-09-11,Dry,Board hanging level 1; duct install corridor; floor prep stacks,27,Waiting on RFI-013 at corridor duct,,,Superintendent
+P-2041,2026-09-14,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,23,Waiting on RFI-013 at corridor duct,,Toolbox talk: ladders,Superintendent
+P-2041,2026-09-15,Dry,Board hanging level 1; duct install corridor; floor prep stacks,19,Waiting on RFI-013 at corridor duct,,,Superintendent
+P-2041,2026-09-16,Dry,Framing level 1 east; MEP rough-in reading room; ceiling demolition stacks,26,Waiting on RFI-013 at corridor duct,,,Superintendent
+P-2041,2026-09-17,Dry,Board hanging level 1; duct install corridor; floor prep stacks,22,Waiting on RFI-013 at corridor duct,,,Superintendent
