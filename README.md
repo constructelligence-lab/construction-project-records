@@ -83,17 +83,23 @@ mapping file pointed at this schema.
 [`AGENTS.md`](AGENTS.md) tells an AI agent how to run the weekly review with this repository, and what it must leave to
 people.
 
-## Related
+<!-- begin:family -->
+## More from Constructelligence
 
-- [construction-data-migration](https://github.com/constructelligence-lab/construction-data-migration): moving these
-  records, and everything else, between systems without losing anything.
-- [construction-agent-skills](https://github.com/constructelligence-lab/construction-agent-skills): skills for drafting
-  RFIs, daily reports and notice letters.
-- [construction-mcp](https://github.com/constructelligence-lab/construction-mcp): offline construction reference data and
-  calculators for AI assistants.
+Open construction resources from the same team, all maintained alongside this one:
 
-Questions, or a log you would like added? [Open an issue](https://github.com/constructelligence-lab/construction-project-records/issues).
-Not legal advice: notice and time-limit questions belong with whoever manages your contract.
+| Repository | What it is |
+| --- | --- |
+| [AI in construction](https://github.com/constructelligence-lab/ai-in-construction) | A practical guide to AI in construction: what works today, what the data has to look like, the risks, and a 90-day plan. |
+| [Construction data migration](https://github.com/constructelligence-lab/construction-data-migration) | A guide and toolkit for moving a contractor between systems, and proving nothing was lost. |
+| [Construction reference data](https://github.com/constructelligence-lab/construction-data) | Cost codes, units, waste factors, pay units, trade sequence, glossary and metric formulas in CSV. |
+| [Construction reference MCP server](https://github.com/constructelligence-lab/construction-mcp) | An offline MCP server that gives AI assistants construction reference data and calculators. |
+| [Construction prompts](https://github.com/constructelligence-lab/construction-prompts) | 28 prompts for ChatGPT, Claude and Gemini, from bid go/no-go to notice letters. |
+| [Construction agent skills](https://github.com/constructelligence-lab/construction-agent-skills) | 28 installable agent skills for Claude Code and any agent that reads SKILL.md. |
+| [Open source construction tools](https://github.com/constructelligence-lab/open-source-construction-tools) | Open source software for BIM, CAD, scheduling and site work, verified against the GitHub API. |
+
+<!-- end:family -->
+
 
 ## Licence
 
