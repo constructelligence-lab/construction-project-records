@@ -71,6 +71,23 @@ translate statuses repeatably, the mapping tool in
 [construction-data-migration](https://github.com/constructelligence-lab/construction-data-migration) works with a
 mapping file pointed at this schema.
 
+## Linking the logs to everything else
+
+The five logs are one corner of a project. The
+[construction schema](https://github.com/constructelligence-lab/construction-schema) carries the same records with
+the rest (spec sections, subcontracts, change orders, costs, pay applications, schedule, assets) and links them, so
+an RFI can be followed to the change order and the costs behind it. Its converter reads this repository's CSVs
+directly:
+
+```bash
+python3 -m cschema convert construction-project-records path/to/your/logs -o project.jsonl --system procore
+python3 -m cschema trace project.jsonl rfi:RFI-011
+```
+
+Names in the logs become party records, and spec section and sheet numbers in `references` become linked records.
+The same records can be validated and traced by an AI assistant through
+[construction-mcp](https://github.com/constructelligence-lab/construction-mcp).
+
 ## What it does not do
 
 - **It does not judge.** It finds late notices, but cannot tell you what your contract requires or whether a notice is
@@ -92,6 +109,7 @@ Open construction resources from the same team, all maintained alongside this on
 | --- | --- |
 | [AI in construction](https://github.com/constructelligence-lab/ai-in-construction) | A practical guide to AI in construction: what works today, what the data has to look like, the risks, and a 90-day plan. |
 | [Construction data migration](https://github.com/constructelligence-lab/construction-data-migration) | A guide and toolkit for moving a contractor between systems, and proving nothing was lost. |
+| [Construction schema](https://github.com/constructelligence-lab/construction-schema) | One record format for construction project data, with provenance, classifications and links, built for AI. |
 | [Construction reference data](https://github.com/constructelligence-lab/construction-data) | Cost codes, units, waste factors, pay units, trade sequence, glossary and metric formulas in CSV. |
 | [Construction reference MCP server](https://github.com/constructelligence-lab/construction-mcp) | An offline MCP server that gives AI assistants construction reference data and calculators. |
 | [Construction prompts](https://github.com/constructelligence-lab/construction-prompts) | 28 prompts for ChatGPT, Claude and Gemini, from bid go/no-go to notice letters. |
