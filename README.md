@@ -73,6 +73,13 @@ mapping file pointed at this schema.
 
 ## Linking the logs to everything else
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/trace-dark.svg">
+    <img src="assets/trace-light.svg" alt="An RFI is traced to its spec section and submittals, and forward to the change event, change order, cost lines and pay application" width="100%">
+  </picture>
+</p>
+
 The five logs are one corner of a project. The
 [construction schema](https://github.com/constructelligence-lab/construction-schema) carries the same records with
 the rest (spec sections, subcontracts, change orders, costs, pay applications, schedule, assets) and links them, so
