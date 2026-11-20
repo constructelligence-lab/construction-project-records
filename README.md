@@ -131,6 +131,10 @@ Open construction resources from the same team, all maintained alongside this on
 
 Guide, schema, templates and samples: **CC BY 4.0**. Code: **MIT**. See [`LICENSE`](LICENSE).
 
+## Related on constructelligence.co
+
+- [open models, datasets and tools](https://constructelligence.co/open-source/)
+
 ---
 
 *Maintained by [Constructelligence](https://constructelligence.co) — building the AI infrastructure for construction.*
